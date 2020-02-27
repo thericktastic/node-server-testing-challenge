@@ -27,9 +27,11 @@
 > npm i dotenv
 > npm i bcryptjs
 > npm i nodemon
+> npm i pg
 > npm i -D jest
 > npm i -D supertest
 
+> touch .env
 
 <!-- Initialize knex file -->
 > knex init
@@ -47,6 +49,7 @@
 
 # CREATE server.js FILE
 <!-- test GET endpoint after this -->
+> touch server.js
 
 // import express
 const express = require("express");
@@ -58,7 +61,7 @@ const server = express();
 
 // use routers
 
-// set up initial endpoint to test if server is live
+// set up initial route to test if server is live
 server.get("/", (req, res) => {
   res.json({ api: "leggggooo!!!" });
 });
@@ -68,7 +71,7 @@ module.exports = server;
 
 
 # CREATE index.js FILE
-<!--  -->
+> touch index.js
 
 const server = require("./server.js");
 

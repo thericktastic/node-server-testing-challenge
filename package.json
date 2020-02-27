@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --watch",
     "server": "nodemon index.js",
-    "start": "node index.js" 
+    "start": "node index.js"
   },
   "jest": {
     "testEnvironment": "node"
@@ -28,6 +28,11 @@
     "supertest": "^4.0.2"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
+    "knex": "^0.20.10",
+    "pg": "^7.18.2"
   }
 }
